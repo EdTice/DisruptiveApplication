@@ -31,9 +31,13 @@ jobs:
           coverity-user: ${{ secrets.COVERITY_USER }}
           coverity-passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
           coverity-project-name: ${{ github.event.repository.name }}
+          
           coverity-download-url: synopsys-sig-community/synopsys-github-bits
           coverity-download-creds: ${{ secrets.COVERITY_DOWNLOAD_CREDS }}
           coverity-download-version: 2022.3.1
+          coverity-license-url: https://thirteen.community/private/license.dat
+          coverity-license-creds: ${{ secrets.COVERITY_LICENSE_CREDS }}
+          
           coverity-checker-options: --webapp-security
           create-stream-and-project: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
