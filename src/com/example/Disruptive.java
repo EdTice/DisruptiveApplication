@@ -9,7 +9,7 @@ public class Disruptive
     System.out.println("Be Disruptive");
     System.out.println("Be-E Disruptive");
     System.out.println("B-E D-I-S-R-U-P-T-I-V-E");
-    str=str;
+    str=str; // TODO: Fix
     
     String pw = new String(pa.getPassword());
     System.out.println("Your access token is: "+pw);
